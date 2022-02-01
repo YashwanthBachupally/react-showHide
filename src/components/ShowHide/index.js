@@ -19,18 +19,10 @@ class ShowHide extends Component {
     const {firstname, lastname} = this.state
 
     const showfirst = () =>
-      firstname ? (
-        <div className="name-box">
-          <h1 className="name">Joe</h1>
-        </div>
-      ) : null
+      firstname ? <p className="name-box name">Joe</p> : null
 
     const showlast = () =>
-      lastname ? (
-        <div className="name-box">
-          <h1 className="name">Jonas</h1>
-        </div>
-      ) : null
+      lastname ? <p className="name-box name">Jonas</p> : null
 
     return (
       <div className="conataiere">
